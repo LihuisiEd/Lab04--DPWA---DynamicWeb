@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Mi plantilla Pug
+    link(rel="stylesheet", href="/css/styles.css")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;1,300&display=swap" rel="stylesheet")
+
+    
+  body
+
+    .banner
+        .hero-text
+            h1 #{title}
+
+            p #{description}
+
+    .container
+        .cajas
+            ul
+                -var lista= ["Vision",'Mision', 'Objetivo']
+                each val in lista 
+                    .caja
+                        li
+                            case val
+                                when "Vision"
+                                    p.title= val
+                                    p #{vision}
+                                when "Mision"
+                                    p.title= val
+                                    p #{mision}
+                                when "Objetivo"
+                                    p.title= val
+                                    p #{objetivo}
+                                default
+                                    p Nada que mostrar aún                             
+    
+    ul
+      each item in ['Manzanas', 'Plátanos', 'Naranjas']
+        li
+            button=item
+
+    // Ejemplo de condicional con if
+    - var showImage = true
+    if showImage
+      img(src='https://via.placeholder.com/150')
+    // Ejemplo de llamado de variables
+    - var nombre = 'Juan'
+    p Hola #{nombre}, ¿cómo estás?
+

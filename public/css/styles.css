@@ -1,0 +1,73 @@
+body{
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+    font-size: 50px;
+    color: blueviolet;
+}
+
+.hero-text {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    top: 50%;
+    left: 50%;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja {
+    text-align:center;
+    background-color: rgb(165, 76, 223);
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 25%;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.299);
+}
+
+li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.banner {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+button{
+    background-color: blueviolet;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.299);
+}
